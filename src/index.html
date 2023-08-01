@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <script type="module" src="main.js"></script>
+    <title>MenstruaLog</title>
+  </head>
+  <body>
+    <div class="starter">
+      <h5 class="welcome">Welcome To MenstruaLog</h5>
+      <form class="welcomeDiv">
+        <label for="welcomeName">Your Name</label>
+        <input type="text" id="welcomeName" class="welcomeInput" required />
+        <label for="welcomeDays">How long your period lasts on average</label>
+        <input type="number" class="welcomeInput" id="welcomeDays" required />
+        <label for="welcomeBirthdate">Your birthdate</label>
+        <input
+          type="date"
+          class="welcomeInput"
+          id="welcomeBirthdate"
+          required
+        />
+        <button class="submit" type="submit" id="submit">Let's start</button>
+      </form>
+    </div>
+    <header>
+      <div class="greetBox">
+        <span class="greet">Good Morning</span>
+        <span class="nickname">Miss</span>
+      </div>
+
+      <div class="specialOccasion"></div>
+      <div class="que">What would you like to do?</div>
+      <div class="buttons">
+        <button class="checkPeriod">Check Period Date</button>
+        <button class="jokeBtn">Listen To A Joke</button>
+        <button class="listenMusic">Listen To Music</button>
+        <a href="" target="_blank" class="messageMe">Talk To Someone</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="joke" style="display: none">
+        <h4 class="setup">
+          Joke Loading....
+          <br />
+          <br />
+          Can't wait to see you smile
+        </h4>
+        <h4 class="answer"></h4>
+        <div class="jokeArrow arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#ff007f"
+            class="bi bi-arrow-left"
+            viewBox="0 0 16 16"
+            stroke="#ff007f"
+            stroke-width="1"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+            />
+          </svg>
+        </div>
+        <button class="exitJoke">Close</button>
+        <button class="nextJoke">Next</button>
+      </div>
+
+      <div class="period" style="display: none">
+        <div class="pDiv">
+          <span>When did you have your last period?</span>
+          <input type="date" class="periodInput" placeholder="18" />
+        </div>
+        <div class="periodArrow arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#ff007f"
+            class="bi bi-arrow-left"
+            viewBox="0 0 16 16"
+            stroke="#ff007f"
+            stroke-width="1"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+            />
+          </svg>
+        </div>
+        <div>
+          <h4 class="periodDate"></h4>
+          <h4 class="periodPrediction"></h4>
+          <h4 class="leftPeriod"></h4>
+          <h4 class="changeDate">Change the date?</h4>
+        </div>
+      </div>
+
+      <div class="music" style="display: none">
+        <div class="musicArrow arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#ff007f"
+            class="bi bi-arrow-left"
+            viewBox="0 0 16 16"
+            stroke="#ff007f"
+            stroke-width="1"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+            />
+          </svg>
+        </div>
+        <h4>Listen music based on your mood</h4>
+        <div class="links">
+          <a
+            href="https://open.spotify.com/playlist/23yTFsRmsuzFLUVjYtkSgT"
+            target="_blank"
+            >Romantic</a
+          >
+          <a
+            href="https://open.spotify.com/playlist/0IQo4hoPuOVMi6QuOBWEYU"
+            target="_blank"
+            >Sad</a
+          >
+          <a
+            href="https://open.spotify.com/playlist/1fF73hY1QzokhWz5RTeoRb"
+            target="_blank"
+            >Happy</a
+          >
+          <a
+            href="https://open.spotify.com/playlist/0i2S0eEdftTrmLKueMWUKX"
+            target="_blank"
+            >Hindi</a
+          >
+          <a
+            href="https://open.spotify.com/playlist/6M14oz8xWgu8XzDv5OQB5Ys"
+            target="_blank"
+            >Ed Sheeran</a
+          >
+          <a
+            href="https://open.spotify.com/playlist/44CNZLvLScNZ6YK87eJR1q"
+            target="_blank"
+            >Nepali</a
+          >
+          <a
+            href="https://open.spotify.com/playlist/7msgpEqduZvJT2lqUMlM1J"
+            target="_blank"
+            >Lofi</a
+          >
+          <a
+            href="https://open.spotify.com/playlist/37i9dQZF1DXa2huSXaKVkW"
+            target="_blank"
+            >90's Classic</a
+          >
+          <a
+            href="https://open.spotify.com/playlist/0SRdjSDz4RsuozwHv1zhvr"
+            target="_blank"
+            >Tiktok</a
+          >
+        </div>
+      </div>
+
+      <form class="message" style="display: none">
+        <div class="messageDiv">
+          <label for="messageInput">Link to your loved one</label>
+          <input
+            type="text"
+            class="messageInput"
+            id="messageInput"
+            placeholder="https://wa.me/98XXXXXXXX"
+            required
+          />
+        </div>
+        <div class="messageArrow arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#ff007f"
+            class="bi bi-arrow-left"
+            viewBox="0 0 16 16"
+            stroke="#ff007f"
+            stroke-width="1"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+            />
+          </svg>
+        </div>
+        <p>
+          Enter the link of the special person's profile with whom you like to
+          contact to when you click this button from now on.
+          <br />
+          Once you submit the form, reload the extension to see the results.
+        </p>
+        <button class="messageBtn">Submit</button>
+      </form>
+
+      <div class="memes" class="shouldHide">
+        <img src="./placeholder.jpg" class="memeImg" alt="" class="" />
+      </div>
+
+      <div class="quoteSection" class="shouldHide">
+        <span class="quote"
+          >“I'm sick of following my dreams, man. I'm just going to ask where
+          they're going and hook up with ’em later.”</span
+        >
+        <span class="author">~ Mitch Hedberg</span>
+      </div>
+    </main>
+
+    <footer>
+      <span>Hope you have a nice day💖</span>
+    </footer>
+  </body>
+</html>

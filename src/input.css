@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=PT+Serif:wght@700&display=swap');
+
+body {
+  width: 420px;
+  min-height: 300px;
+  margin: 0 20px;
+  font-family: 'Lato', sans-serif;
+  background-color: #fc8eac;
+  color: white;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+button,
+.messageMe {
+  background: #ff007f;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  border: 0;
+  height: 35px;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.messageMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover,
+.messageMe:hover {
+  background: #ff2893;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button:active {
+  scale: 0.93;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.greetBox {
+  text-align: center;
+  margin: 10px 0;
+  cursor: default;
+}
+
+.greet,
+.nickname,
+.emoji {
+  color: white;
+  font-size: 2rem;
+  font-family: 'PT Serif', serif;
+}
+
+.nickname {
+  margin-left: 6px;
+  color: #ff007f;
+}
+
+.specialOccasion {
+  display: none;
+  margin-top: -10px;
+  color: rgb(255, 0, 76);
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 900;
+  line-height: 2;
+}
+
+.onceADay {
+  display: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.que {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 3px;
+  cursor: pointer;
+}
+
+.joke {
+  height: 10rem;
+}
+
+.setup {
+  margin-top: 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  height: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.answer {
+  font-size: 1.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #d4006a;
+  font-weight: 900;
+  height: 1rem;
+}
+
+.joke button {
+  margin: 10px 0;
+  width: 5rem;
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+.period {
+  margin-top: 40px;
+}
+
+.period span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.period input {
+  margin-top: 5px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #ff5bad;
+  border: 0;
+  user-select: none;
+}
+
+.period h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.period .changeDate {
+  color: #d4006a;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.music {
+  margin-top: 40px;
+}
+
+.music h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.music a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff007f;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  border: 0;
+  height: 35px;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.music a:hover {
+  background: #ff2893;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.messageDiv {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageDiv input {
+  font-size: 1.1rem;
+  outline: none;
+  margin: 5px 0;
+  border: 0;
+  padding: 5px 10px;
+  width: 18rem;
+}
+
+.messageBtn {
+  padding: 0 15px;
+  margin-bottom: 5px;
+}
+
+.memes {
+  background: #ffa6c9;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+.memes img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.quoteSection {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quote {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.author {
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 550;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'PT Serif', serif;
+  pointer-events: none;
+}
+
+.welcome {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 15px 0;
+  font-family: 'PT Serif', serif;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.welcomeInput {
+  outline: none;
+  border: 0;
+  padding: 4px 6px;
+  font-size: 1.2rem;
+}
+
+.welcomeDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.submit {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}

@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "MenstruaLog",
+  "description": "Introducing MenstruaLog - Your Delightful Period Tracker\nStay in tune with your body effortlessly with MenstruaLog, the heartwarming period tracker extension that makes menstrual cycle tracking a breeze.",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "./src/index.html",
+    "default_icon": "./icon.png"
+  },
+  "permissions": ["storage", "notifications", "alarms"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./extension.js"],
+      "css": ["./style.css"]
+    }
+  ]
+}
